@@ -32,7 +32,7 @@ oddNums([1,2,3,4,5])
 
 //2.Convert all the strings to title caps in a string array
 //a.Anonymous function
-var function title(string) {
+function title(string) {
     var sentence = string.toLowerCase().split(" ");
     for(var i = 0; i< sentence.length; i++){
        sentence[i] = sentence[i][0].toUpperCase() + sentence[i].slice(1);
@@ -68,7 +68,7 @@ console.log(sentence.join(" "));
 
  //3.Sum of all numbers in an array
  //a.Anonymous function
- var sums=function(arr){
+ function sums(arr){
     let sum=0;
     for (let i=0;i<arr.length;i++){
         sum=sum+arr[i];
@@ -103,7 +103,7 @@ console.log(sentence.join(" "));
 
  //4.Return all the prime numbers in an array
 //a.Anonymous function
-var primes=function(arr){
+function primes(arr){
     arr=arr.filter((number)=>{
           for(let i=2;i<number;i++){
               if(number% i==0)return false;
